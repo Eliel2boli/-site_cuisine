@@ -1,0 +1,155 @@
+ /* Mon commentaire CSS */
+ body{
+    background-color: #8ba1bb;
+    font-family: Arial;
+}
+
+div.contenu{
+    background-color: white;
+    margin: 0px 8% 50px 8%;
+    padding: 30px;
+    min-width: 328px;
+    box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+p.categorie{
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin:0;
+    padding: 8px 18PX;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.categorie{
+    text-align: center;
+    margin-bottom: -18px;
+  
+}
+
+h1{
+    text-align: center;
+}
+
+p.description{
+    text-align: center;
+    max-width: 500px;
+    display: inline-block;
+}
+
+div.description{
+    text-align: center;
+}
+
+div.separateur{
+    width: 200px;
+    background-color: black;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.centre{
+    text-align: center;
+    width: 100%;
+    display: block
+}
+
+div.info{
+    position: relative;
+}
+
+table.info{
+    position: absolute; 
+    bottom:0; 
+    background-color:#6c829dc0; 
+    width: 100%;
+    color: white;
+    height: 80px;
+}
+
+table.info th{
+    text-align: center;
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+
+table.info td{
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+div.colonne{
+    width: 45%;
+}
+
+div.colonne1{
+    display: inline-block; /* Pour n'occuper que l'espace necessaire et liberer le reste*/
+    
+}
+
+div.colonne2{
+    float: right; /* pour decaler une colonne à droite*/
+    
+}
+
+div.colonne h2{
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom:solid 5px #6c829d;
+    text-align: center;
+    margin-right: 10%;
+    padding-bottom: 10px;
+}
+
+img.info{
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: lightgray;
+}
+div.ingredients p{
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 8px 0;
+    font-size: 14px;
+    margin: 3px;
+}
+table.preparation p.numero{
+    background-color: #6c829d;
+    color: white;
+    /*A partir d'ici nous allons travailler sur l'aspect bulle */
+    width:25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px; /* pour avoir le texte au centre */
+    box-sizing: border-box; /* Pour avoir un carré 25 x 25px */
+    border-radius:50%; /* Pour avoir l'effet de rond (on peut aussi l'utiliser pour arrondir les bord avec des valeurs plus petites caomme 4pxpar exemple) */
+    margin: 0; /*on suprrime les margins pour que les numéros également montent*/
+}
+
+table.preparation td{
+    vertical-align: top; /* Pour remonter les textes vers le haut */
+}
+
+table.preparation td.preparation_etape{ /* Ajuster les textes de notre item "Préparation"*/
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+table.preparation tr{
+    height: 40px;  /* On met un espacement entre les lignes pour que ça ne e colle pas*/
+}
+
+*{
+    overflow: auto;         
+    /* On utilise le selecteur "*" pour signifier qu'il s'agit de tout le document, c-a-d "on selectionne" tout dans notre page HTML et on lui applique "OVERFLOW: AUTO" pour lui dire de réadapter tout ce qui deborde au contenu. */
+}
